@@ -15,4 +15,4 @@
 </ul>
 
 <p>Demo: <a href="http://www.xcms.pl">tworzenie stron www</a> -> Ciemny styl</p>
-<p>Demo: <a href="http://www.designcart.pl">Design Cart</a> -> Granatowy sty</p>
+<p>Demo: <a href="https://www.designcart.pl">Design Cart</a> -> Granatowy sty</p>
