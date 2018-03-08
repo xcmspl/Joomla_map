@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1" client="site" method="upgrade">
+    <name>Tsi Map</name>
+    <author>Design Studio WWW</author>
+	<copyright>Copyright (C) 2011-2016 Design Studio WWW All rights reserved.</copyright>
+    <version>1.0.0</version>
+	<license>http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <description>The module display awesome maps form Google with Squezze styles.</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_tsimap.ini</language>
+		<language tag="en-GB">en-GB.mod_tsimap.sys.ini</language>
+		<language tag="pl-PL">pl-PL.mod_tsimap.ini</language>
+		<language tag="pl-PL">pl-PL.mod_tsimap.sys.ini</language>
+	</languages>
+    <files>
+        <filename>mod_tsimap.xml</filename>
+        <filename module="mod_tsimap">mod_tsimap.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+		<filename>assest/mod_tsimap.css</filename>
+		<filename>assest/mod_tsimap.js</filename>
+    </files>
+	<config>
+		<fields name="params">
+		
+			<fieldset name="basic">
+				<field name="Marker" class="" type="media" default="" label="GOOGLEMAP_MARKER" description="" />
+				<field name="Zoom" type="integer" default="14" label="GOOGLEMAP_ZOOM" description="" first="1" last="16" step="1" />
+				<field name="Latitude"  type="text" default="" label="GOOGLEMAP_MARKER_LATITUDE" description="" filter="string" />	
+				<field name="Longitude"  type="text" default="" label="GOOGLEMAP_MARKER_LONGITUDE" description="" filter="string" />
+				<field name="Height"  type="text" default="400px" label="GOOGLEMAP_MARKER_HEIGHT" description="" filter="string" />
+				<field name="Width"  type="text" default="100%" label="GOOGLEMAP_MARKER_WIDTH" description="" filter="string" />
+				<field name="Style"  type="textarea" default='[{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]' label="GOOGLEMAP_STYLE" description="" filter="string" />
+				<field name="UseAPI" type="radio" class="btn-group btn-group-yesno" default="0" label="GOOGLEMAP_USEAPI" description="">
+					<option value="0">GOOGLEMAP_API_NO</option>
+					<option value="1">GOOGLEMAP_API_YES</option>
+				</field>
+				<field name="ApiKey"  type="text" default="" label="GOOGLEMAP_APIKEY" description="" filter="string" />
+			</fieldset>
+			
+		</fields>
+	</config>
+    
+</extension>
+
+
